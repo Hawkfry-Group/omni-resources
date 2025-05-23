@@ -24,7 +24,7 @@ Overall strategy here is to leave the existing model and content alone, so you h
 ### 3. Migrate Content (Dashboards, Workbooks, etc.)
 - Use Omni's **Content Migration APIs** to copy dashboards, workbooks, and other content to point to the new model.
 - This ensures all your content uses the new data source without manual recreation.
-- **Example Script**: See `@document_migration.py` in the templates directory for a ready-to-use script to automate dashboard and workbook migration to a new model. Assumes you already have a list of document IDs.
+- **Example Script**: See [`@document_migration.py`](../templates/document_migration.py) in the templates directory for a ready-to-use script to automate dashboard and workbook migration to a new model. Assumes you already have a list of document IDs.
 - **Fix Broken Content References**: You have three options:
    - Use the content validator to fix broken references.
    - Use the `renamed_from` parameter in the new view file to reference the old view name.
@@ -66,6 +66,7 @@ Instead of creating a new model and migrating content, you can keep the same con
 ## References
 - [Omni Content Migration Guide](https://docs.omni.co/docs/finding-content/migrate-content)
 - [Model Management in Omni](https://docs.omni.co/docs/modeling/model-management)
+- [document_migration.py example script](../templates/document_migration.py)
 
 ---
 
