@@ -70,3 +70,21 @@ This can be achieved through both the connection, User roles/permissions and the
 - A workbook owner can share a workbook
 - Owners of folders can make all workbooks in a folder available
 - Regardless if a workbook is shared,  if the user has data access restrictons the data will not be shown
+
+# Omni User Management Tool
+
+For managing users, groups, and user attributes with Omni from the command line, you can use the [omni-user-manager Python package](https://github.com/Hawkfry-Group/omni-user-manager).
+
+- **Purpose:** Synchronize users, groups, and user attributes with Omni via the command line.
+- **Installation:**
+  ```bash
+  pip install omni-user-manager
+  ```
+  (Recommended: install in a Python virtual environment)
+- **Features:**
+  - Sync users, groups, and attributes using Omni APIs
+  - Supports JSON and CSV data sources
+  - Multiple sync modes (full, groups-only, attributes-only)
+  - Easy CLI usage
+
+See the [GitHub repository](https://github.com/Hawkfry-Group/omni-user-manager) for usage instructions and examples.
