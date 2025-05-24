@@ -1,4 +1,5 @@
 # @document_migration.py
+# This script uses the API, its now recommended you use the omni SDK (see script content_migration_folder.py which does the same thing)
 # This script should be used to migrate document content to a new model in your Omni instance.
 # Set your API key, new model ID, and instance name as described below.
 import subprocess
